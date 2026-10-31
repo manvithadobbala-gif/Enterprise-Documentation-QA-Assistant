@@ -1,0 +1,25 @@
+# Virtual Environment
+.venv/
+venv/
+ENV/
+
+# Python Cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.pytest_cache/
+
+# Environment Variables & Secrets
+.env
+
+# Vector Store & Local Data
+chroma_db/
+data/uploads/*
+!data/uploads/.gitkeep
+
+# OS generated files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store

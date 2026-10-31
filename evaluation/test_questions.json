@@ -1,0 +1,66 @@
+[
+    {
+        "id": "q1_answerable",
+        "question": "What is the paid parental leave duration for primary caregivers?",
+        "type": "answerable",
+        "expected_document": "HR_Policy_2024.md",
+        "expected_keywords": ["12 weeks", "parental leave"],
+        "expect_conflict": false,
+        "expect_fallback": false
+    },
+    {
+        "id": "q2_answerable",
+        "question": "What is the maximum allowable per diem for daily meal expenses?",
+        "type": "answerable",
+        "expected_document": "Travel_Expense_Policy.txt",
+        "expected_keywords": ["$75", "meal"],
+        "expect_conflict": false,
+        "expect_fallback": false
+    },
+    {
+        "id": "q3_answerable",
+        "question": "What are the password requirements and length for enterprise systems?",
+        "type": "answerable",
+        "expected_document": "IT_Security_Guidelines.html",
+        "expected_keywords": ["16 characters", "multi-factor", "2FA"],
+        "expect_conflict": false,
+        "expect_fallback": false
+    },
+    {
+        "id": "q4_unanswerable",
+        "question": "What is the company policy for pet insurance reimbursement?",
+        "type": "unanswerable",
+        "expected_document": null,
+        "expected_keywords": [],
+        "expect_conflict": false,
+        "expect_fallback": true
+    },
+    {
+        "id": "q5_unanswerable",
+        "question": "Can I receive my corporate bonus in Bitcoin or Ethereum?",
+        "type": "unanswerable",
+        "expected_document": null,
+        "expected_keywords": [],
+        "expect_conflict": false,
+        "expect_fallback": true
+    },
+    {
+        "id": "q6_conflict",
+        "question": "How many days of annual leave do full-time employees receive?",
+        "type": "conflict",
+        "expected_document": null,
+        "expected_keywords": ["25 days", "20 days"],
+        "expect_conflict": true,
+        "expect_fallback": false
+    },
+    {
+        "id": "q7_ambiguous",
+        "question": "leave",
+        "type": "ambiguous",
+        "expected_document": null,
+        "expected_keywords": [],
+        "expect_conflict": false,
+        "expect_fallback": false,
+        "expect_clarification": true
+    }
+]
