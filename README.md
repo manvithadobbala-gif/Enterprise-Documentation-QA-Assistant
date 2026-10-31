@@ -1,3 +1,4 @@
+HEAD
 # Enterprise Documentation Q&A Assistant
 
 An enterprise-grade, retrieval-augmented generation (RAG) assistant built from scratch in Python. It allows employees to upload heterogeneous corporate documents (PDF, TXT, Markdown, HTML), index them into ChromaDB with Sentence Transformers, and query them using Groq LLM inference with strict factual grounding, citation tracing, contradiction detection, and hallucination safeguards.
@@ -103,3 +104,6 @@ Evaluates retrieval precision, fallback behavior, conflict detection, and clarif
 .\.venv\Scripts\python.exe evaluation\evaluate.py
 ```
 *(Achieves 100% on retrieval relevance, 100% on fallback abstention, 100% on conflict detection, and 100% on clarification triggering).*
+=======
+# Enterprise-Documentation-QA-Assistant
+AI-powered enterprise documentation chatbot using RAG
